@@ -1,12 +1,16 @@
 {
+  "homepage": "https://Idioticapricot.github.io/Expense-Tracker",
   "name": "react-app",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "tsc && vite build",
-    "preview": "vite preview"
+    "start": "react-scripts start",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
   },
   "dependencies": {
     "@hookform/resolvers": "^2.9.11",
@@ -15,6 +19,7 @@
     "react-dom": "^18.2.0",
     "react-hook-form": "7.43",
     "react-icons": "^4.7.1",
+    "react-scripts": "^5.0.1",
     "reacticons": "^0.0.1",
     "styled-components": "^6.1.14",
     "zod": "^3.24.1"
